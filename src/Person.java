@@ -27,9 +27,8 @@ public class Person {
         Person p = personPool.get(name.hashCode());
         if (p == null) {
             personPool.put(name.hashCode(), this);
-            return this;
-        } else {
-            return p;
+            p = this;
         }
+        return p;
     }
 }

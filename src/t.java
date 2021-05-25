@@ -1,5 +1,9 @@
+import java.util.Scanner;
+
 public class t {
     public static void main(String[] args) {
+
+
         System.out.println("以下使用自定义类型Person演示");
         Person p1 = new Person("小明");
         Person p2 = Person.buildPerson("小明");
@@ -20,6 +24,11 @@ public class t {
         s3.intern();
         String s4 = "34";
         System.out.println(s3 == s4);
+
+            Scanner scanner = new Scanner(System.in);
+                while(scanner.hasNext()){
+                    System.out.println(scanner.next()+scanner.next());
+                }
     }
 
 
